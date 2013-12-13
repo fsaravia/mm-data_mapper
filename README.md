@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fsaravia/mm-data_mapper.png)](https://travis-ci.org/fsaravia/mm-data_mapper)
+
 mm-data_mapper
 ======
 

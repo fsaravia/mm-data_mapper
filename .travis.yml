@@ -1,0 +1,7 @@
+language: ruby
+services: mysql
+script: "bundle exec rspec"
+before_install:
+  - gem install bundler
+before_script:
+  - mysql -e 'create database monkey_mailer_test'

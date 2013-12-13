@@ -13,8 +13,7 @@ MonkeyMailer.configure do |config|
   config.loader_options = {
     :default => {
       :adapter => 'mysql',
-      :user => 'monkey-mailer',
-      :password => 'monkey_mailer_dev',
+      :user => 'travis',
       :database => 'monkey_mailer_test'
     }
   }
