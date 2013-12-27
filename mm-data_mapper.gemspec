@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{DataMapper loader for MonkeyMailer}
   spec.summary       = %q{DataMapper loader for MonkeyMailer}
   spec.homepage      = "https://github.com/fsaravia/mm-data_mapper/"
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.license       = "UNLICENSE"
 
   spec.files         = `git ls-files`.split("\n")
