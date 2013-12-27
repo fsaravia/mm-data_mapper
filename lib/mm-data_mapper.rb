@@ -19,7 +19,7 @@ module MonkeyMailer::Loaders
 
     def initialize(sources)
       ::DataMapper::Logger.new(STDOUT, 'fatal')
-      raise ArgumentError, 'One of the database names must be default' unless sources.include?(:default)
+      raise ArgumentError, 'One of the database names must be default' unless [:default, 'default'].any? {|source| sources.include? source}
       sources.each_pair do |name, opts|
         ::DataMapper.setup(name.to_sym, opts)
       end
