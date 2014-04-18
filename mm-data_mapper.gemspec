@@ -15,10 +15,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = `git ls-files -- spec/*`.split("\n")
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'monkey-mailer', '>= 0.0.1'
-  spec.add_dependency 'data_mapper', '>= 1.2.0'
-  spec.add_development_dependency 'rspec', '>= 2.12.0'
-  spec.add_development_dependency 'dm-mysql-adapter', '>= 1.2.0'
-  spec.add_development_dependency 'database_cleaner', '>= 1.2.0'
-  spec.add_development_dependency 'spawn', '>= 0.1.4'
+  spec.add_dependency 'monkey-mailer', '~> 0.0', '>= 0.0.4'
+  spec.add_dependency 'data_mapper', '~> 1.2', '>= 1.2.0'
+  spec.add_development_dependency 'rspec', '~> 2', '>= 2.12.0'
+  spec.add_development_dependency 'dm-mysql-adapter', '~> 1.2', '>= 1.2.0'
+  spec.add_development_dependency 'database_cleaner', '~> 1.2', '>= 1.2.0'
+  spec.add_development_dependency 'spawn', '~> 0.1', '>= 0.1.4'
 end
