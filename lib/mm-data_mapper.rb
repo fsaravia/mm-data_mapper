@@ -12,6 +12,18 @@ class MailQueue
   property :from_name, String, :length => 255
   property :subject, String, :length => 255
   property :body, Text
+
+  has n, :attachments, :constraint => :destroy
+
+  class Attachment
+    include ::DataMapper::Resource
+
+    property :id, Serial
+    property :file_path, String, :length => 255, :required => true
+    property :content_type, String, :length => 255, :required => true
+
+    belongs_to :mail_queue
+  end
 end
 
 module MonkeyMailer::Loaders

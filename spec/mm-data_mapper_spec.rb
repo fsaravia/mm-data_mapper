@@ -9,7 +9,11 @@ describe MailQueue do
       :to_name => 'Test recipient',
       :to_email => 'test@example.org',
       :subject => "I'm doing some test dude!",
-      :body => "<html><h1>Title</h1><p>Just some text on the test email</p></html>"
+      :body => "<html><h1>Title</h1><p>Just some text on the test email</p></html>",
+      :attachments => [
+        {:file_path => 'test.txt', :content_type => 'text/plain'},
+        {:file_path => 'test.pdf', :content_type => 'application/pdf'}
+      ]
     }
   end
 
